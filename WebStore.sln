@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore", "domain\WebStore
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{0BC172A0-136B-497B-A3C2-1D2A2C33AD04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore.Memory", "infrastrucure\Store.Memory\WebStore.Memory.csproj", "{C58B6468-2A0A-447C-8D05-531A66899929}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{FB7276CF-0DD3-48AA-9690-031531C1AFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB7276CF-0DD3-48AA-9690-031531C1AFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB7276CF-0DD3-48AA-9690-031531C1AFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58B6468-2A0A-447C-8D05-531A66899929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58B6468-2A0A-447C-8D05-531A66899929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58B6468-2A0A-447C-8D05-531A66899929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58B6468-2A0A-447C-8D05-531A66899929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FB7276CF-0DD3-48AA-9690-031531C1AFAF} = {41DE5303-E647-42F6-932D-93B10A89C275}
+		{C58B6468-2A0A-447C-8D05-531A66899929} = {0BC172A0-136B-497B-A3C2-1D2A2C33AD04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C31F273-9444-4832-B35C-4C32A5E41A09}
