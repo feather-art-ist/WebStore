@@ -12,16 +12,15 @@
 
         public Book[] GetAllByTitleOrAuthor(string titleOrAuthor)
         {
-            throw new NotImplementedException();
+            return books.Where(book => book.Author.Contains(titleOrAuthor)
+                    || book.Title.Contains(titleOrAuthor)).ToArray();
 
-            //Hack: end a logic
+            //TODO: Add check on uppercase and lower
         }
 
         public Book[] GetByIsbn(string isbn)
         {
-            return books.Where(book => book.Isbn.Contains(isbn)).ToArray();
-
-            //TODO: invariant to UperCase and LowerCase
+            return books.Where(book => book.Isbn == isbn).ToArray();
         }
     }
 }
