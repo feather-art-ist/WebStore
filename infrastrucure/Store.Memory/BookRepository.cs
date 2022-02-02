@@ -30,6 +30,11 @@
 
         public Book[] GetAllByTitleOrAuthor(string titleOrAuthor)
         {
+            if(titleOrAuthor == "all books")
+            {
+                return books;
+            }
+
             return books.Where(book => book.Author.Contains(titleOrAuthor)
                     || book.Title.Contains(titleOrAuthor)).ToArray();
 
