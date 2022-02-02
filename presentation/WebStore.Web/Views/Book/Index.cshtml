@@ -1,0 +1,16 @@
+﻿@model Book
+
+@{
+    ViewData["Title"] = "Model.Ttile";
+}
+@if(Model != null)
+{
+    <h1>@Model.Title</h1>
+    <p><strong>@Model.Author</strong></p>
+    <p>@Model.Description</p>
+    <p>Price<strong> @Model.Price</strong> $</p>
+}
+else
+{
+    <p>Description wasn`t found</p>
+}

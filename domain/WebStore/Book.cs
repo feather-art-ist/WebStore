@@ -9,14 +9,20 @@ public class Book
 
     public string Author { get; }
 
+    public string Description { get; }
+
+    public decimal Price { get; }
+
     public string Isbn { get; }
 
-    public Book(int id, string title, string author, string isbn)
+    public Book(int id, string title, string author, string isbn, string description, decimal price)
     {
         Id = id;
         Title = title;
         Author = author;
         Isbn = isbn;
+        Description = description;
+        Price = price;
     }
 
     internal static bool IsIsbn(string isbn)
