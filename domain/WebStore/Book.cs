@@ -1,41 +1,20 @@
 ﻿using System.Text.RegularExpressions;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebStore;
 public class Book
 {
-    public int Id { get; }
+    public int Id { get; set; }
 
-    public string Title { get; }
+    public string Title { get; set; }
 
-    public string Author { get; }
+    public string Author { get; set; }
 
-    public string Description { get; }
+    public string Description { get; set; }
 
-    public decimal Price { get; }
+    public decimal Price { get; set; }
 
-    public string Isbn { get; }
+    public string Isbn { get; set; }
 
-    public Book(int id, string title, string author, string isbn, string description, decimal price)
-    {
-        Id = id;
-        Title = title;
-        Author = author;
-        Isbn = isbn;
-        Description = description;
-        Price = price;
-    }
-
-    internal static bool IsIsbn(string isbn)
-    {
-        if(isbn == null)
-        {
-            return false;
-        }
-
-        isbn = isbn.Replace("-", "")
-            .Replace(" ", "")
-            .ToUpper();
-
-        return Regex.IsMatch(isbn, "^ISBN\\d{13}$");
-    }
 }
